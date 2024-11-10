@@ -1,25 +1,30 @@
-# django-gst-field
+# Django Indian Tax Fields
+
+    This repository is a fork of the original repository [django-gst-field](https://github.com/jinchuuriki91/django-gst-field). This fork is created to maintain the code and extend the original scope.
+
+# Contents
 
 A Django library which provides model and form fields for `Goods and Services Tax` and `Permanent Account Number`
 
 Includes:
 
- - `GSTField`, form and model field
- - `PANField`, form and model field
+- `GSTField`, form and model field
+- `PANField`, form and model field
 
 ## Installation
+
 ```
-pip install django-gst-field
+pip install django-indian-tax-fields
 ```
 
 ### Basic usage
 
-Add `gst_field` to the list of the installed apps in Django `settings.py` file:
+Add `indian_tax_fields` to the list of the installed apps in Django `settings.py` file:
 
 ```python
 INSTALLED_APPS = [
     ...
-    'gst_field',
+    'indian_tax_fields',
     ...
 ]
 ```
@@ -29,7 +34,9 @@ INSTALLED_APPS = [
 ```python
 from django.conf import settings
 from django.db.models import ForeignKey, CASCADE, Model
-from gst_field.modelfields import GSTField, PANField
+
+from indian_tax_fields.gst.model_fields import GSTField
+from indian_tax_fields.pan.model_fields import PANField
 
 class Tax(Model):
     user = ForeignKey(settings.AUTH_USER_MODEL, on_delete=CASCADE)
