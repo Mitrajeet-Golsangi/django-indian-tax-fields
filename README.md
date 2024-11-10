@@ -1,6 +1,6 @@
 # Django Indian Tax Fields
 
-    This repository is a fork of the original repository [django-gst-field](https://github.com/jinchuuriki91/django-gst-field). This fork is created to maintain the code and extend the original scope.
+>This repository is a fork of the original repository [django-gst-field](https://github.com/jinchuuriki91/django-gst-field). This fork is created to maintain the code and extend the original scope.
 
 # Contents
 
